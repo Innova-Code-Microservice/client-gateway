@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+import { NatsModule } from './transports/nats/nats.module';
 
 @Module({
-  imports: [],
+  imports: [NatsModule],
   controllers: [],
   providers: [],
 })
